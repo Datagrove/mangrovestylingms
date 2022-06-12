@@ -1,0 +1,400 @@
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: rgb(35, 113, 35);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.home {
+    padding-left: 10px;
+}
+
+.home > a {
+    text-decoration: none;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+.inbox {
+    padding-right: 10px;
+}
+
+.inbox > i {
+    font-size: xx-large;
+}
+
+.section, .page {
+    /* border: 2px solid red; */
+    padding: 10px;
+    background-color: rgb(231, 228, 225);
+}
+
+.page {
+    /* height: 100vh; */
+    display: flex;
+    padding: 0 15% 10% 15%;
+    /* justify-content: center; */
+    justify-content: center;
+    background-color: rgb(231, 228, 225);
+    font-family: 'Tajawal', sans-serif;
+    /* margin: 100px;  */
+    /* margin: 0 auto; */
+}
+
+.page-title {
+    /* padding: 5px 0 5px 25px; */
+    background-color: rgb(231, 228, 225);
+    font-family: 'Tajawal', sans-serif;
+    font-size: x-large;
+}
+
+.page-title > h1 {
+    margin: 0;
+    padding-top: 10px;
+}
+
+.container {
+    /* margin-top: 8px; */
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    width: fit-content;
+    /* justify-content: center; */
+    justify-content: flex-start;
+    /* justify-content: space-evenly; */
+}
+
+.grade-div {
+    display: grid;
+    grid-template-rows: 80% 20%;
+    justify-content: center;
+    height: 180px;
+    width: 180px;
+    margin: 2px 10px 4px 2px;
+    /* background-color: yellow; */
+    /* border: 2px solid red; */
+}
+
+.grade-img {
+    /* border: 2px solid yellow; */
+    width: 180px;
+}
+
+.grade-title {
+    color: whitesmoke;
+    background-color: navy;
+    opacity: 90%;
+    width: 100%;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.subject-title > p {
+    /* text-align: center; */
+    line-height: 5px;
+    font-size: large;
+}
+
+.grade-img > img {
+    height: 180px;
+    width: 180px;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {    
+    html {
+        background-color: rgb(231, 228, 225);
+    }
+
+    .section {
+        margin: 0px;
+        padding: 0px;
+    }
+    .page {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .container {
+        /* margin-top: 8px; */
+        /* margin: 0 auto; */
+        display: flex;
+        flex-wrap: wrap;
+        /* background-color: red; */
+        margin: 0px;
+        width: fit-content;
+        justify-content: center;
+    }
+    
+    .grade-div {
+        display: grid;
+        grid-template-rows: 70% 30%;
+        justify-content: center;
+        height: 96px;
+        width: 96px;
+        margin: 1px;
+        /* margin: 2px 5px 4px 2px; */
+        /* border: 2px solid yellow; */
+    }
+    
+    .grade-title {
+        color: whitesmoke;
+        background-color: navy;
+        opacity: 90%;
+        width: 100%;
+        border-radius: 3px;
+        margin: 0px;
+    }
+
+    .grade-title > p {
+        text-align: center;
+        line-height: 0px;
+        font-size: medium;
+    }
+
+    .grade-img {
+        /* border: 2px solid yellow; */
+        width: 96px;
+    }
+    
+    .grade-img > img {
+        height: 96px;
+        width: 96px;
+        border-radius: 3px;
+        object-fit: cover;
+    }
+}
+
+/* styles for subjects by grade */
+
+.subjects-page {
+    /* height: 100vh; */
+    display: flex;
+    padding: 0 5% 10% 5%;
+    /* justify-content: center; */
+    justify-content: center;
+    background-color: rgb(231, 228, 225);
+    font-family: 'Tajawal', sans-serif;
+    /* margin: 100px;  */
+    /* margin: 0 auto; */
+}
+
+.subjects-container {
+    /* margin-top: 8px; */
+
+    /* margin: 0 auto; */
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: red; */
+    width: fit-content;
+    justify-content: space-between;
+    /* justify-content: flex-start; */
+}
+
+.subjects-div {
+    display: grid;
+    grid-template-rows: 70% 30%;
+    justify-content: center;
+    height: 150px;
+    width: 250px;
+    margin: 2px 10px 4px 2px;
+    box-sizing: border-box;
+    /* background-color: yellow; */
+    /* border: 2px solid red; */
+    box-shadow: 5px 5px 5px gray;
+}
+
+.subject-img {
+    /* border: 2px solid yellow; */
+    width: 250px;
+}
+
+.subject-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(94, 163, 203);
+    box-sizing: border-box;
+}
+
+.subject-title {
+    box-sizing: border-box;
+    color: whitesmoke;
+    background-color: navy;
+    opacity: 90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+
+}
+
+.subject-title > p {
+    line-height: 20px;
+    font-size: large;
+    padding: 0 5px 0 5px;
+    margin: 10px 0 10px 0;
+}
+
+.subject-img > img {
+    height: 90px;
+    width: 90px;
+    object-fit: cover;
+    padding-right: 3px;
+    padding-top: 2px;
+}
+
+@media screen and (max-width: 600px) {
+    .subjects-page {
+        display: flex;
+        padding: 0 5% 10% 5%;
+        justify-content: center;
+        background-color: rgb(231, 228, 225);
+        font-family: 'Tajawal', sans-serif;
+    }
+    
+    .subjects-container {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        width: fit-content;
+        justify-content: space-between;
+    }
+    
+    .subjects-div {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        justify-content: center;
+        height: 75px;
+        width: 250px;
+    }
+    
+    .subject-img {
+        width: 65px;
+        height: 75px;
+    }
+    
+    .subject-title {
+        height: 75px;
+        width: 190px;
+    }
+    
+    .subject-title > p {
+        line-height: 1.15;
+        font-size: large;
+        padding-top: 5px;
+    }
+    
+    .subject-img > img {
+        height: 48px;
+        width: 48px;
+    }
+
+    /* .hide-on-small {
+        display: none;
+    } */
+}
+
+/* styles for lessons by subject */
+
+html {
+    background-color:rgb(231, 228, 225);
+}
+
+.lessons-page-title {
+    margin: 0 15% 0 15%;
+}
+
+.lessons-page-title > h1 {
+    font-family: 'Tajawal', sans-serif;
+    font-size: xx-large;
+    margin-top: 15px;
+}
+
+.lessons-div {
+    box-sizing: border-box;
+    background-color: whitesmoke;
+    width: 600px;
+    height: 325px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    box-shadow: 5px 5px 5px gray;
+    margin-top: 20px;
+}
+
+.lesson-header {
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+    border-bottom: 1px solid red;
+}
+.lesson-img > img {
+    width: 48px;
+}
+
+.lesson-title > h1{
+    font-size: xx-large;
+    margin: 20px 0 5px 5px;
+}
+
+li {
+    font-size: large;
+    line-height: 2;
+}
+
+@media screen and (max-width: 600px) {
+    html {
+        background-color:rgb(231, 228, 225);
+    }
+    
+    .lessons-page-title {
+        margin: 0px;
+    }
+
+    .link-title {
+        font-family: 'Tajawal', sans-serif;
+        font-size: xx-large;
+        margin: 10px 0 0 5px;
+    }
+
+    .lessons-div {
+        box-sizing: border-box;
+        background-color: whitesmoke;
+        width: 300px;
+        height: 500px;
+        display: grid;
+        grid-template-rows: 15% 85%;
+        box-shadow: 5px 5px 5px gray;
+        margin-top: 20px;
+    }
+    
+    .lesson-header {
+        display: flex;
+        justify-content: flex-start;
+        /* padding: 2px; */
+        border-bottom: 1px solid red;
+        /* margin: 0px; */
+    }
+
+    .lesson-img > img {
+        width: 48px;
+    }
+    
+    .lesson-title > h1 {
+        font-size: xx-large;
+        margin: 20px 0 5px 5px;
+    }
+    
+    li {
+        font-size: large;
+        line-height: 2;
+    }
+}
